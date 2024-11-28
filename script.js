@@ -38,20 +38,22 @@ const teamMembers = [
 ];
 
 
-
-
-
-/*
-- Creare una funzione che destrutturi gli obj nell'array. 
--- la funzione deve passare ad una variabile (che si occupera dell'html) i valori destrutturati dall'obj
-
-- Creare una funzione che cicli l'obj (for of per iterare l'array e avere indietro i valori e non le chiavi)
-
-*/
-
-
 for (let key of teamMembers){
 
-  
-  
+const {name, role, email, img}  = key 
+
+
+const col = `
+    <div class="col-3 d-flex align-items-center border p-3 mt-5 mx-2 gap-4">
+        <img class="w-50" src="./${img}" alt="placeholder">
+        <div class="info w-50">
+            <h4>${name}</h4>
+            <p>${role}</p>
+            <p>${email}</p>
+        </div>
+    </div> 
+`
+document.getElementById("containerMembri").innerHTML += col
+
+
 }
