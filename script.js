@@ -44,12 +44,12 @@ const {name, role, email, img}  = key
 
 
 const col = `
-    <div class="col-3 d-flex align-items-center border p-3 mt-5 mx-2 gap-4">
-        <img class="w-50" src="./${img}" alt="placeholder">
-        <div class="info w-50">
+    <div class="col-12 col-md-4 team-col d-flex align-items-center bg-warning-subtle mb-5 mt-5">
+        <img class="w-50 px-1" src="./${img}" alt="placeholder">
+        <div class="info w-50 p-2">
             <h4>${name}</h4>
             <p>${role}</p>
-            <p>${email}</p>
+            <a href="${email}">${email}</a>
         </div>
     </div> 
 `
