@@ -36,3 +36,22 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+
+
+
+
+/*
+- Creare una funzione che destrutturi gli obj nell'array. 
+-- la funzione deve passare ad una variabile (che si occupera dell'html) i valori destrutturati dall'obj
+
+- Creare una funzione che cicli l'obj (for of per iterare l'array e avere indietro i valori e non le chiavi)
+
+*/
+
+
+for (let key of teamMembers){
+
+  
+  
+}
