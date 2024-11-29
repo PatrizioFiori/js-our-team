@@ -37,7 +37,21 @@ const teamMembers = [
   }
 ];
 
+teamMeamberUpdate() //serve per creare il submit
 
+
+
+const form = document.getElementById("myForm");
+
+form.addEventListener("submit", event => {
+  event.preventDefault(); // Impedisce l'invio predefinito del form
+  console.log("Form inviato!");
+});
+
+
+
+
+function teamMeamberUpdate (){
 for (let key of teamMembers){
 
 const {name, role, email, img}  = key 
@@ -53,7 +67,9 @@ const col = `
         </div>
     </div> 
 `
+
 document.getElementById("containerMembri").innerHTML += col
 
 
+}
 }
